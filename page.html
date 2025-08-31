@@ -1,0 +1,224 @@
+<section>
+   <div class="">
+	<a href="index.html">Home</a>
+   </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>1xBet-ng</title>
+<style>
+  /* Reset */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    max-width: 350px;
+    background: #fff;
+    margin: 10px auto 20px auto;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 580px; /* ensure fits in 600px height comfortably */
+  }
+  header {
+    padding: 15px 20px 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  header h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  header p {
+    font-size: 0.875rem;
+    color: #777;
+    margin: 3px 0 0 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 180px;
+    background: url('https://images.unsplash.com/photo-1560448076-92903a5dbfa9?auto=format&fit=crop&w=600&q=80') no-repeat center/cover;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .property-info {
+    padding: 12px 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #444;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .feature-item {
+    text-align: center;
+    flex: 1;
+    border-radius: 10px;
+    background: #eef3f9;
+    padding: 10px 5px;
+    margin: 0 5px;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 0.05);
+  }
+
+  .feature-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+  }
+
+  .feature-item p {
+    margin: 4px 0 0 0;
+    font-size: 0.75rem;
+    color: #627d98;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .gallery img {
+    height: 45px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .gallery img:hover,
+  .gallery img.active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border: 2px solid #2980b9;
+  }
+
+  .price-contact {
+    padding: 12px 15px 20px 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #27ae60;
+  }
+
+  .contact-btn {
+    background: #040a0e;
+    border: none;
+    color: rgb(233, 224, 224);
+    font-weight: 700;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+
+  .contact-btn:hover {
+    background: #28739e;
+  }
+
+  /* Scrollbar for small scrollable area */
+  .property-info::-webkit-scrollbar {
+    width: 6px;
+  }
+  .property-info::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 360px) {
+    .container {
+      max-width: 100vw;
+      margin: 5px 0 15px 0;
+      height: 580px;
+    }
+    .feature-item {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Property details">
+    <header>
+      <h1>1xBet-ng Info</h1>
+      <p>Get your token ₦20,000.00 and withdraw.</p>
+    </header>
+    
+      <p class="description">
+         Daily withdraw of ₦100,000.00 after getting your token.
+        <P><h4>account Number:8062923471</h4></P> <h4>Bank Name:safe haven</h4> <p><h4>Account Name:Checkout</h4></p>
+       </p>
+      
+    <div class="price-contact">
+      <div class="price" aria-label="Property price"> ₦100,000.00</div>
+      <button class="contact-btn"  type="button" aria-label="Make the payment and withdraw" onclick="alert('Get Your Token And Place A Withdraw.')">withdraw</button>
+    <button class="contact-btn">
+        <a href="withdraw.html">Done</a>
+    </button> 
+    </div>
+  </div>
+  
+
+<script>
+  // Gallery image click handler to change hero image
+  const galleryImages = document.querySelectorAll('.gallery img');
+  const heroImage = document.getElementById('hero-image');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      // Remove active class from others
+      galleryImages.forEach(i => i.classList.remove('active'));
+      // Set clicked image active
+      img.classList.add('active');
+      // Change hero image background
+      const largeSrc = img.getAttribute('data-large');
+      heroImage.style.backgroundImage = `url('${largeSrc}')`;
+    });
+  });
+
+  // Initialize hero image with first gallery image large source
+  if (galleryImages.length > 0) {
+    heroImage.style.backgroundImage = `url('${galleryImages[0].getAttribute('data-large')}')`;
+  }
+</script>
+
+</body>
+</html>
+
